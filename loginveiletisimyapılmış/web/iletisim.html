@@ -1,0 +1,89 @@
+<html>
+	<head>
+	   <title>İletişim | Web Tasarım </title>
+	   <meta http-equiv="Content-Type" content="text/html";charset=utf-8 />
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <script src="javascript/script.js"> </script>
+	   <meta charset="utf-8">
+	   <meta name="description" />
+	   <meta name="keywords" />
+	   
+	   <link href="css/style.css" rel="stylesheet" type="text/css">
+	   <link rel="shortcut icon" href="img/icon.png">
+	</head>
+	<body>
+		<div id="header">
+			<a href="index.html" title="Anasayfa">
+				<img src="img/logo.jpg" alt="logo" class="websitesilogo"/>
+			</a>
+			<ul class="menu">
+				<li>
+					<a href="index.html"	title="Anasayfa">Anasayfa</a>
+				</li>
+				
+				<li>
+					<a href="ozgecmis.html"	title="Özgeçmiş">Özgeçmiş</a>
+				</li>
+				
+				<li>
+					<a href="sehrim.html"	title="Şehrim">Şehrim</a>
+				</li>
+				
+				<li>
+					<a href="mirarimiz.html"	title="Mirasımız">Mirasımız</a>
+				</li>
+				<li>
+					<a href="ilgialanlarim.html"	title="İlgi Alanlarım">İlgi Alanlarım</a>
+				</li>	
+				<li>
+					<a href="iletisim.html"	title="İletişim">İletişim</a>
+				</li>
+				<li>
+					<a href="login.html"	title="Login">Login</a>
+				</li>				
+			</ul>
+		</div>
+		<div id="content">
+			<h1>İletişim</h1>
+			<div class="sayfabanner">
+				        
+                <form action="php/iletisim.php" id="form" onsubmit=" return Denetle(this)" method="POST">
+                Adınız: <input type="text" name="firstname" >
+                Soyadınız: <input type="text" name="lastname" >
+                <br><br>
+                Cinsiyet : <input type="radio" name="gender" value="Erkek">Erkek <input type="radio" name="gender" value="Kadın" >Kadın <input type="radio" name="gender" value="Diger" >Diğer 
+                <br> <br>
+                Yaşınız : <input type="number" name="yas" min="1" max="100">
+                <br>  <br>
+                Telefon Numaranız:<br>
+                <select name="tip">
+                  <option value="Ev">Ev</option>
+                  <option value="Is">İş</option>
+                  <option value="Cep">Cep</option>
+                </select>
+                <input type="tel" name="tel" onkeypress='return event.keyCode >= 48 && event.keyCode <= 57 || event.keyCode == 45' maxlength="12" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></input> <br>
+                <br><br>
+                E-Mailiniz: <input type="email" name="email" id="email">
+                <br> <br>
+                Kulandığın sosyal medya hesapları : <br>
+                <input type="checkbox" name="insta" value="instagram" > İnstagram 
+                <input type="checkbox" name="face" value="facebook"> Facebook 
+                <input type="checkbox" name="twt" value="twitter"> Twitter 
+                <br><br>
+                <textarea name="messeage" id="mesaj" cols="50" rows="4" placeholder="Mesajınızı buraya yazınız..."></textarea>
+                <br>
+                <input type="submit" name="submit" id="submit">
+                <input type="reset" name="temizle" id="temizle">
+            
+                </form>
+            
+			</div>
+
+
+		</div>
+		<div id="footer">
+		
+		</div>
+	</body>
+
+</html>
